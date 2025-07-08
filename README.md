@@ -1,6 +1,7 @@
 # Competitive informatics tasks solving
 
-Tasks from bulgarian national competitions and the nation olimpiad. </br>
+Tasks from bulgarian national competitions and the national olimpiad. </br>
+Adding solutions for all competitions for groups E to A.
 <hr></br>
-All materials from:
+All tasks from: </br>
 https://arena.olimpiici.com
