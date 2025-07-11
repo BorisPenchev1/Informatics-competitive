@@ -22,7 +22,7 @@ int main(){
                     Max = a[i][j];
                     br = 1;
                 }
-                else if (Max == a[i][j])    {
+                else if (Max == a[i][j]){
                     br++;
                 }
             }
