@@ -10,9 +10,10 @@ int c[MAX];
 
 int main(){
 
-    int n, m; cin >> n >> m;
-
+    int n; cin >> n;
     for (int i = 1 ; i <= n ; i++) cin >> a[i];
+
+    int m; cin >> m;
     for (int i = 1 ; i <= m ; i++) cin >> b[i];
 
     int u = 1, d = 1, i = 1;
@@ -33,7 +34,7 @@ int main(){
     } 
     while (d <= m){
         c[i] = b[d];
-        i++; u++;
+        i++; d++;
     } 
 
     for (int j = 1 ; j < i ; j++){
