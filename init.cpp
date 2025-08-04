@@ -5,21 +5,25 @@ using namespace std;
 
 const int MAXN = 1e6 + 7;
 
-void read(){
+void read()
+{
 
 }
 
-void solve(){
+void solve()
+{
 
 }
 
-void fastIO(){
+void fastIO()
+{
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
     cout.tie(NULL);
 }
 
-int main(){
+int main()
+{
     fastIO();
     read();
     solve();
