@@ -42,7 +42,9 @@ string solve(int a, int b, int n_in_A){
 
 int main(){
 
-    int a, b, n; cin >> a >> b >> n;
+    int a, b, n;
+    cin >> n >> a;
+    cin >> b;
 
     cout << solve(a, b, n) << endl;
 
