@@ -25,7 +25,7 @@ void solve()
     {
         if (!st.empty())
         {
-            while (a[i] > st.top() && i != n && !st.empty())
+            while (!st.empty() and a[i] >= st.top())
             {
                 st.pop();
             }
