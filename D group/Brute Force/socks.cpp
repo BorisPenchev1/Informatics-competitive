@@ -7,7 +7,12 @@ const int MAXN = 1e3 + 7;
 
 int n, k;
 int a[MAXN];
-vector <pair <pair <int, int>, int>> v;
+vector <pair <pair <int, int>, int> > v;
+
+bool cmp(pair <pair <int, int>, int> a, pair <pair <int, int>, int> b)
+{
+    return a.second < b.second;
+}
 
 void solve()
 {
@@ -15,16 +20,14 @@ void solve()
     {
         for (int j = i + 1 ; j <= n ; j++)
         {
-            v[i].first.first = a[i];
-            v[i].first.second = a[j];
-            v[i].second = a[j] - a[i];
-        }
+            v.push_back({{a[i], a[j]}, a[j] - a[i]});
+        }   
     }
 
-    sort(v.begin(), v.end());
+    sort(v.begin(), v.end(), cmp);
 
-    cout << v[k].first.first << " " << v[k].first.second << endl;
-}
+    cout << v[k - 1].first.first << " " << v[k - 1].first.second << endl;
+} 
 
 void read()
 {
