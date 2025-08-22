@@ -5,25 +5,27 @@ using namespace std;
 
 const int MAXN = 1e6 + 7;
 
-int n, p;
-string q;
+int k;
+int a[MAXN];
+
+int f(int n)
+{
+    if (n == 1) return a[1];
+    return max(f(n - 1), a[n]);
+}
 
 void solve()
 {
-    cin >> n >> p;
+    cout << f(k) << endl;
+}
 
-    int curr;
-    while (n > 0)
+void read()
+{   
+    cin >> k;
+    for (int i = 1 ; i <= k ; i++)
     {
-        curr = n % p;
-        n /= p;
-
-        q.push_back(curr + '0');
+        cin >> a[i];
     }
-
-    reverse(q.begin(), q.end());
-
-    cout << q << endl;
 }
 
 void fastIO()
@@ -36,7 +38,6 @@ void fastIO()
 int main()
 {
     fastIO();
+    read();
     solve();
 }
-
-//from base p to base ten

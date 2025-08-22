@@ -7,7 +7,7 @@ int main() {
     string s; cin >> s;
     int p; cin >> p;
 
-    unsigned long long int sum = 0;
+    string sum = 0;
     int j = 0;
     for (int i = s.size() - 1; i >= 0 ; i--){
         sum += (s[i] - '0') * pow(p, j);

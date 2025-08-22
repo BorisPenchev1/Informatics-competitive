@@ -5,25 +5,17 @@ using namespace std;
 
 const int MAXN = 1e6 + 7;
 
-int n, p;
-string q;
+int f(int n)
+{
+    
+}
 
 void solve()
 {
-    cin >> n >> p;
+    int k;
+    cin >> k;
 
-    int curr;
-    while (n > 0)
-    {
-        curr = n % p;
-        n /= p;
-
-        q.push_back(curr + '0');
-    }
-
-    reverse(q.begin(), q.end());
-
-    cout << q << endl;
+    
 }
 
 void fastIO()
@@ -38,5 +30,3 @@ int main()
     fastIO();
     solve();
 }
-
-//from base p to base ten

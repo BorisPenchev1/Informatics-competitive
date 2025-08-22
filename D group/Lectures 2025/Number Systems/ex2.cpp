@@ -47,3 +47,5 @@ int main()
     fastIO();
     solve();
 }
+
+//from base ten to base to base p
